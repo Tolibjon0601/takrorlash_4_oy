@@ -81,11 +81,34 @@
 // n ta elementdan tashkil topgan massiv berilgan uning
 // elementlarini teskari tartibda chiqaruvchi programma tuzilsin.
 
-function reverseArray(arr) {
- let reversedArr = arr.reverse();
+// function reverseArray(arr) {
+//  let reversedArr = arr.reverse();
 
- // Teskari massivni konsolga chiqarish
- console.log("Teskari massiv: " + reversedArr);
+//  // Teskari massivni konsolga chiqarish
+//  console.log("Teskari massiv: " + reversedArr);
+// }
+// let myArray = [1, 2, 3, 4, 5,6,7,8,9,10,11,12];
+// reverseArray(myArray);
+
+// 7-misol
+// n ta elementdan tashkil topgan massiv berilgan dastlab massiv elementlari orasidan juftlarini
+// indekslarini osish tartibida;toqlarini indekslarini kamayish tartibida chiqaruvchi programma tuzilsin
+// masalan=>4 5 7 8 6 9
+// natija=>4 8 6 9 7 5
+
+function JuftVaToq(arr) {
+ let juftElements = [];
+ let toqElements = [];
+ for (let i = 0; i < arr.length; i++) {
+     if (arr[i] % 2 === 0) {
+         juftElements.push(arr[i]);
+     } else {
+         toqElements.push(arr[i]);
+     }
+ }
+ toqElements.reverse();
+ let result = juftElements.concat(toqElements);
+ console.log("Natija: " + result.join(", "));
 }
-let myArray = [1, 2, 3, 4, 5,6,7,8,9,10,11,12];
-reverseArray(myArray);
+let myArray = [4, 5, 7, 8, 6, 9];
+JuftVaToq(myArray);
