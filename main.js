@@ -49,4 +49,43 @@
 // console.log(sum);
 // 4-misol
 // n soni berilgan n sonini tub yoki tub emasligini aniqlovchi dastur tuzilsin
-let n=Number(prompt("n sonini kiriting: "));
+// let n=Number(prompt("n sonini kiriting: "));
+// function isPrime(n) {
+//  if (n <= 1) {
+//      return false;
+//  }
+//  for (let i = 2; i <= Math.sqrt(n); i++) {
+//      if (n % i === 0) {
+//          return false;
+//      }
+//  }
+//  return true;
+// }
+// if (isPrime(n)) {
+//  console.log(n+ " soni tub son.");
+// } else {
+//  console.log(n+ " soni tub emas.");
+// }
+// 5-misol
+// to'g'ri burchakli uchburchakning katetlari A va B berilganda ,
+// uning perimetrini aniqlovchi TriangleP nomli funksiya hosil qiling
+// let a=Number(prompt("a: "));
+// let b=Number(prompt("b: "));
+// function TriangleP(a,b) {
+//  let c=Math.sqrt(a*a+b*b);
+//  let P=a+b+c;
+//  return P;
+// }
+// console.log("perimetri: "+TriangleP(a, b));
+// 6-misol
+// n ta elementdan tashkil topgan massiv berilgan uning
+// elementlarini teskari tartibda chiqaruvchi programma tuzilsin.
+
+function reverseArray(arr) {
+ let reversedArr = arr.reverse();
+
+ // Teskari massivni konsolga chiqarish
+ console.log("Teskari massiv: " + reversedArr);
+}
+let myArray = [1, 2, 3, 4, 5,6,7,8,9,10,11,12];
+reverseArray(myArray);
